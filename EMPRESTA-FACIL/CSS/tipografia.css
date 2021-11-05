@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+:root {
+    /* CORES */
+    --cor-primaria: #0a0a0a; 
+    --cor-titulo: #556EE6;
+    --cor-destaque: 2 COR EF8094;
+    --cor-branco: rgb(255, 255, 255);
+    --cor-bg-claro: #EFF8FA;
+    --cor-bg-card:#D6EEF2;
+    --cor-botao: #328E8C;
+    --cor-bt-hover: #215f5e;;
+    --cor-borda-form: #c4c4c4;
+    --cor-lk-hover: #b4dce78a;
+    --cor-hamburger: rgb(66, 66, 68);
+    /* FONTES */
+    --ff-primaria: 'Poppins', sans-serif;
+    --ff-titulo: 'DM Serif Text', serif;
+}

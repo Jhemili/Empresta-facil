@@ -1,0 +1,46 @@
+.line {
+    display: block;
+    background-color: var(--cor-hamburger);
+    width: 30px;
+    height: 5px;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0 1.5em;
+}
+
+li {
+    list-style: none;
+    padding-top: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--ff-primaria);
+}
+
+#menu {
+    cursor: pointer;
+
+}
+
+.side-menu {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    
+}
+
+.nav {
+    box-shadow: 15px 15px 15px rgba(18,38,63,0.1);
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.change {
+    display: block;
+}
