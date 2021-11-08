@@ -15,15 +15,17 @@
                         <label for="sobrenome">Sobrenome</label> <input class="sobrenome" type="text" id="sobrenome" placeholder="sobrenome" required>
                     </div>
                     <div class="form-input">
+                        <label for="celular">Celular</label><input name="celular" type="tel" id="celular" maxlength="14" data-js="celular">
+                    </div>
+                    <div class="form-input">
                         <label for="endereco">Endereço</label> <input class="rua" type="text" id="rua" placeholder="rua" required>
                         <input class="bairro" type="text" id="bairro" placeholder="bairro" required>
                         <input class="numero" type="text" id="numero" placeholder="número" required>
-                        <input class="cep" type="text" id="cep" pattern="\d{5}-\d{3}$" placeholder="cep 000-000" required>
+                        <input class="cep" type="text" id="cep" placeholder="cep" maxlength="9" data-js="cep" required>
                     </div>        
                     <button type="submit">Salvar</button>             
                 </form>
             </div>
         </div>
     </main>
-</body>
-</html>
+<?php include "footer.php" ?>

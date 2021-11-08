@@ -1,11 +1,18 @@
 const masks = {
-    celular(value){
+    celular (value){
         return value
-        .replace(/\D/g,'')
+        .replace(/\D/g,'')  //SOMENTE NÚMEROS
         .replace(/(\d{0})(\d)/,'$1($2')  //2 GRUPOS DE CAPTURA
         .replace(/(\d{2})(\d)/, '$1)$2') 
         .replace(/(\d{5})(\d)/, '$1-$2')
+    },
+
+    cep (value){
+        return value
+        .replace(/\D/g,'')
+        .replace(/(\d{5})(\d)/,'$1-$2')
     }
+
 }
 
 document.querySelectorAll('input').forEach(($input) => {
@@ -16,4 +23,3 @@ document.querySelectorAll('input').forEach(($input) => {
     }, false)
 })
 
-//(43)99107-8556

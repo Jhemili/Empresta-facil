@@ -19,6 +19,4 @@
             </div>
         </div>
     </main>
-</body>
-<script src="MASCARA/mascaras.js"></script>
-</html>
+<?php include "footer.php" ?>
