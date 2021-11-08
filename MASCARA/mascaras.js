@@ -7,6 +7,14 @@ const masks = {
         .replace(/(\d{5})(\d)/, '$1-$2')
     },
 
+    tel_fixo (value){
+        return value
+        .replace(/\D/g,'')  //SOMENTE NÚMEROS
+        .replace(/(\d{0})(\d)/,'$1($2')  //2 GRUPOS DE CAPTURA
+        .replace(/(\d{2})(\d)/, '$1)$2') 
+        .replace(/(\d{4})(\d)/, '$1-$2')
+    },
+
     cep (value){
         return value
         .replace(/\D/g,'')
