@@ -2,8 +2,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-family: var(--ff-primaria);
-
 }
 
 main{

@@ -8,5 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/side-menu.css">
     <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/inventario.css">
     <title>Empresta Fácil</title>
 </head>
+<script src="/MASCARA/mascaras.js"></script>
