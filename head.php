@@ -11,4 +11,3 @@
     <link rel="stylesheet" href="CSS/inventario.css">
     <title>Empresta Fácil</title>
 </head>
-<script src="/MASCARA/mascaras.js"></script>

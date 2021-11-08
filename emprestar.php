@@ -1,6 +1,5 @@
 <?php include "head.php" ?>
 <?php include "side-menu.php"?>
-<script></script>
     <main>
         <div class="card">
             <div class="container-titulos">
@@ -13,7 +12,7 @@
                         <label for="destinatario">Destinatário</label> <input name="nome" type="text" required>
                     </div>
                     <div class="form-input">
-                        <label for="celular">Contato</label><input name="celular" type="tel" id="celular" maxlength="14" onkeyup="mascara_celular()">
+                        <label for="celular">Contato</label><input name="celular" type="tel" id="celular" maxlength="14" data-js="celular">
                     </div>
                     <button type="submit">Salvar</button>             
                 </form>
@@ -21,4 +20,5 @@
         </div>
     </main>
 </body>
+<script src="MASCARA/mascaras.js"></script>
 </html>
