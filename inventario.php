@@ -14,11 +14,11 @@
                         <p class="descricao-item">Descrição do exemplo 1</p>
                     </div>     
                     <div class="item-div div-botoes">
-                        <button class="emprestar"><a class="emprestar-link" href="emprestar.php">emprestar</a></button>
+                        <button class="emprestar"><a class="bt-link" href="emprestar.php">emprestar</a></button>
                         <button class="excluir">excluir</button>
                     </div>                   
-                </div>    
-                <button type="submit">cadastrar novo</button>  
+                </div>
+                <button class="cadastrar-item"><a class="bt-link" href="cadastrar-item.php">cadastrar novo</a></button>  
             </div>
         </div>
     </main>

@@ -3,7 +3,7 @@
         <h1>Bem vindo de volta!</h1>
         <h2>Log in para continuar.</h2>
     </div>       
-    <div class="container container-form-login">
+    <div class="container">
         <form action="" method="post" name="login">
             <div class="form-input">
                 <label for="email">E-mail</label> <input class="email" type="email" id="email" placeholder="Digite o e-mail" required>
@@ -16,4 +16,3 @@
         </form>
     </div>
 </div>
-<?php include "footer.php" ?>
