@@ -8,6 +8,5 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/side-menu.css">
     <link rel="stylesheet" href="CSS/inventario.css">
-    <link rel="stylesheet" href="CSS/login.css">
     <title>Empresta Fácil</title>
 </head>

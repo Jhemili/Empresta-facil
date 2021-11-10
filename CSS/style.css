@@ -63,3 +63,20 @@ button:hover {
     padding: 2em;
     width: 500px;
 }
+
+input {
+    border: solid 1px var(--cor-borda-form);
+    border-radius: 4px;
+    margin-top: .5em;
+    padding: 0.5em;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    margin-top: .5em;
+}

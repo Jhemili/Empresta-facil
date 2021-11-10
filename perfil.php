@@ -7,21 +7,27 @@
                 <h2>Edite e salve suas informações pessoais</h2>
             </div>       
             <div class="container container-form-perfil">
-                <form action="" method="post" name="perfil">
+                <form action="processa.php" method="post" name="perfil">
                     <div class="form-input">
-                        <label for="nome">Nome</label> <input class="nome" type="text" id="text" placeholder="Digite seu nome" required>
+                        <label for="nome">Nome</label> <input name="nome_usuario" type="text" id="text" placeholder="Digite seu nome" maxlength="45" required>
                     </div>
                     <div class="form-input">
-                        <label for="sobrenome">Sobrenome</label> <input class="sobrenome" type="text" id="sobrenome" placeholder="sobrenome" required>
+                        <label for="sobrenome">Sobrenome</label> <input name="sobrenome" type="text" id="sobrenome" maxlength="45" placeholder="sobrenome" required>
                     </div>
                     <div class="form-input">
                         <label for="celular">Celular</label><input name="celular" type="tel" id="celular" maxlength="14" data-js="celular">
                     </div>
                     <div class="form-input">
-                        <label for="endereco">Endereço</label> <input class="rua" type="text" id="rua" placeholder="rua" required>
-                        <input class="bairro" type="text" id="bairro" placeholder="bairro" required>
-                        <input class="numero" type="text" id="numero" placeholder="número" required>
-                        <input class="cep" type="text" id="cep" placeholder="cep" maxlength="9" data-js="cep" required>
+                        <label for="email">Email</label><input name="email" type="email" required data-js="email">
+                    </div>
+                    <div class="form-input">
+                        <label for="senha">Senha</label><input name="senha" type="password" required data-js="senha">
+                    </div>
+                    <div class="form-input">
+                        <label for="endereco">Endereço</label> <input name="rua" type="text" id="rua" placeholder="rua" required>
+                        <input name="bairro" type="text" id="bairro" placeholder="bairro" required>
+                        <input name="numero" type="text" id="numero" placeholder="número" required>
+                        <input name="cep" type="text" id="cep" placeholder="cep" maxlength="9" data-js="cep" required>
                     </div>        
                     <button type="submit">Salvar</button>             
                 </form>
