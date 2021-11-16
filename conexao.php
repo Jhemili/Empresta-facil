@@ -6,9 +6,11 @@ $senha = "";
 $dbname = "Empresta_facil";
 
 //CONEXÃO
-$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+$conn = new mysqli($servidor, $usuario, $senha, $dbname);
 
-if($conn->connect_errno){echo "Erro";} 
+if($conn->error){
+    die("Falha ao conectar banco de dados".$conn->error);    
+} 
 
 
 ?>

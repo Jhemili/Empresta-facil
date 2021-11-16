@@ -1,4 +1,7 @@
-<?php include "head.php" ?>
+<?php include "head.php";
+      include "protect.php";
+?>
+
 <body>
     <?php include "side-menu.php" ?>
     <main>
