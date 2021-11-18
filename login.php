@@ -28,7 +28,8 @@
                 header("Location: inventario.php");
 
             } else {
-                echo "erro ao logar";
+                $_SESSION["erro"] = "usuário ou senha incorreto!";
+                
             }
         }
     }
@@ -48,6 +49,11 @@
             <div class="form-input">
                 <label for="senha">Senha</label>
                 <input class="senha" type="password" name="senha" required>
+                <?php 
+                    if(isset($_SESSION["erro"])){
+                        echo $_SESSION["erro"];
+                    }
+                ?>
             </div>           
             <button type="submit">Entrar</button>             
         </form>
