@@ -34,7 +34,10 @@
         }
     }
 ?> 
-
+<?php include "head.php" ?>
+<body>
+    <?php include "side-menu.php" ?>
+    <main>
 <div class="card">
     <div class="container-titulos">
         <h1>Bem vindo de volta!</h1>
@@ -59,3 +62,4 @@
         </form>
     </div>
 </div>
+</main>

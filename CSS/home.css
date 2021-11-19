@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    align-items: center;
+    
+}
+
+main {
+    margin: auto;
+}
+
+.cont-divisao{
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.cont-bloco {
+    margin: auto;
+    padding-right: 2em;
+    width: 400px;
+    position: relative;
+}
+
+.numero {
+    width: 200px;
+}
+
+.numero-sobreposto {
+    position: absolute;
+    -webkit-filter: drop-shadow(3px 3px 3px #bbb0bd);
+    filter: drop-shadow(3px 3px 3px #869094);
+    left: 2em;
+    top: 2em;
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-branco);
+    font-family: var(--ff-primaria);
+}
+
+button {
+    width: 200px;
+    margin: auto;
+    padding: 0.5em;
+    background-color: var(--cor-botao-home);
+    border: none;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: var(--cor-bt-hover-home);
+}

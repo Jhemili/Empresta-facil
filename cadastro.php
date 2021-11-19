@@ -1,12 +1,9 @@
-<?php include "head.php";
-      include "side-menu.php";
-      include "protect.php";
-?>
+<?php include "head.php";?>
     <main>
         <div class="card">
             <div class="container-titulos">
-                <h1>Perfil</h1>
-                <h2>Edite e salve suas informações pessoais</h2>
+                <h1>Cadastro</h1>
+                <h2>Salve suas informações pessoais</h2>
             </div>       
             <div class="container container-form-perfil">
                 <form action="processa_perfil.php" method="post" name="perfil">
@@ -34,7 +31,7 @@
                         <label for="estado"></label><input name="estado" type="text" class="estado" id="estado" placeholder="estado" required>
                         <label for="cep"></label><input name="cep" type="text" class="cep" id="cep" placeholder="cep" minlength="9" maxlength="9" data-js="cep" required>
                     </div>        
-                    <button type="submit" name="salvar" id="submit">Salvar</button>             
+                    <button type="submit" name="salvar" id="submit">Salvar</button> 
                 </form>
             </div>
         </div>
