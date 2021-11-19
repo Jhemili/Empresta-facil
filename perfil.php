@@ -2,6 +2,7 @@
       include "side-menu.php";
       include "conexao.php";
       include "format.php";
+      include "protect.php"; 
       
 if(!isset($_SESSION)){
 session_start();

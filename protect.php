@@ -4,6 +4,6 @@ if (!isset($_SESSION)){
 }
 
 if(!isset($_SESSION['user'])){
-    die(header("location: index.php"));
+    die(header("location: login.php"));
 }
 ?>

@@ -1,5 +1,7 @@
-<?php include "head.php" ?>
-<?php include "side-menu.php"?>
+<?php include "head.php";
+      include "side-menu.php";
+      include "protect.php"; 
+?>
     <main>
         <div class="card">
             <div class="container-titulos">

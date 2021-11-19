@@ -11,6 +11,9 @@
 </head>
 <body>
     <main>
+        <ul>
+            <li><a class="login" href="login.php">Login</a></li>
+        </ul>
         <div class="cont-divisao">
             <div class="cont-bloco">
                 <h1>Gerencie seus itens emprestados de forma fácil e dinâmica</h1>

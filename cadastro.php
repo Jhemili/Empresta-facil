@@ -1,4 +1,7 @@
-<?php include "head.php";?>
+<?php include "head.php";
+
+?>
+
     <main>
         <div class="card">
             <div class="container-titulos">
@@ -6,7 +9,7 @@
                 <h2>Salve suas informações pessoais</h2>
             </div>       
             <div class="container container-form-perfil">
-                <form action="processa_perfil.php" method="post" name="perfil">
+                <form action="processa_cadastro.php" method="post" name="perfil">
                     <div class="form-input">
                         <label for="nome">Nome</label> <input name="nome_usuario" type="text" id="text" placeholder="Digite seu nome" maxlength="45" required>
                     </div>
