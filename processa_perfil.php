@@ -16,8 +16,7 @@
         $estado = filter_input(INPUT_POST, 'estado', FILTER_SANITIZE_STRING);
         $cep = filter_input(INPUT_POST, 'cep', FILTER_SANITIZE_NUMBER_INT); 
 
-      
-        $telefone = "INSERT INTO telefone (celular,telefone_fixo) VALUES ($celular, $telefone_fixo)";
+        $telefone = "INSERT INTO telefone (celular,telefone_fixo) VALUES ('$celular', '$telefone_fixo')";
         $insereTelefone = mysqli_query($conn,$telefone);
         $idTelefone = $conn->insert_id;
 

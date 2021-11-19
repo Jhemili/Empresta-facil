@@ -4,7 +4,7 @@
     /* CORES */
     --cor-primaria: #0a0a0a; 
     --cor-titulo: #556EE6;
-    --cor-destaque: 2 COR EF8094;
+    --cor-destaque: #EF8094;
     --cor-branco: rgb(255, 255, 255);
     --cor-bg-claro: #EFF8FA;
     --cor-bg-card:#D6EEF2;
@@ -12,6 +12,7 @@
     --cor-bt-hover: #215f5e;;
     --cor-borda-form: #c4c4c4;
     --cor-lk-hover: #b4dce78a;
+    --cor-gray: #5f5f5f;
     --cor-hamburger: rgb(66, 66, 68);
     /* FONTES */
     --ff-primaria: 'Poppins', sans-serif;

@@ -8,6 +8,6 @@
         <li><a href="inventario.php">Inventário</a></li>
         <li><a href="itens-emprestados.php">Itens Emprestados</a></li>
         <li><a href="perfil.php">Perfil</a></li>
-        <li><a href="index.php">Sair</a></li>
+        <li><a href="logout.php">Sair</a></li>
     </ul>    
 </div>
