@@ -46,7 +46,7 @@
                 echo "<script>window.location='perfil.php';alert('Dados salvos com sucesso!');</script>"; 
 
             } else {
-                echo "<script>window.location='cadastro.php';alert('Usuario já cadastrado')</script>";
+                echo "<script>window.location='login.php';alert('Usuario já cadastrado')</script>";
             }
         } 
 
