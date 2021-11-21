@@ -1,20 +1,21 @@
 <?php 
      include("conexao.php");
-    
+     include "head.php";
+
      if(isset($_POST['cadastrar'])){
          $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
          $senha = filter_input(INPUT_POST, 'senha');
          
          if($email){
              $sql = "SELECT * FROM usuario WHERE email = '$email'";
-             $sql = mysqli_query($conn,$sql);
+             $sql = $conn->query($sql);
  
              $resultado = $sql->num_rows;
  
              if($resultado == 0){
          
                  $usuario = "INSERT INTO usuario (email, senha) VALUES ('$email', '$senha')";
-                 $insereUsuario = mysqli_query($conn,$usuario);
+                 $insereUsuario = $conn->query($usuario);
          
          
                  echo "<script>window.location='perfil.php';alert('Cadastro feito com sucesso!');</script>";
@@ -28,7 +29,7 @@
  
      } 
 ?>
-<?php include "head.php";?>
+
 <main>
     <div class="card">
         <div class="container-titulos">

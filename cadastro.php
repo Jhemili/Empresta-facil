@@ -9,7 +9,7 @@
                 <h2>Salve suas informações pessoais</h2>
             </div>       
             <div class="container container-form-perfil">
-                <form action="processa_cadastro.php" method="post" name="perfil">
+                <form action="processa_cadastro.php" method="POST" name="perfil">
                     <div class="form-input">
                         <label for="nome">Nome</label> <input name="nome_usuario" type="text" id="text" placeholder="Digite seu nome" maxlength="45" required>
                     </div>
@@ -17,14 +17,14 @@
                         <label for="sobrenome">Sobrenome</label> <input name="sobrenome" type="text" id="sobrenome" maxlength="45" placeholder="sobrenome" required>
                     </div>
                     <div class="form-input">
-                        <label for="celular">Celular</label><input name="celular" type="tel" id="celular" minlength="14" maxlength="14" data-js="celular">
-                        <label for="fixo">Telefone Residencial</label><input name="telefone_fixo" type="tel" minlength="13" id="tel_fixo" maxlength="13" data-js="tel_fixo">
+                        <label for="celular">Celular</label><input name="celular" type="tel" id="celular" maxlength="14" data-js="celular">
+                        <label for="fixo">Telefone Residencial</label><input name="telefone_fixo" type="tel" id="tel_fixo" maxlength="13" data-js="tel_fixo">
                     </div>
                     <div class="form-input">
-                        <label for="email">Email</label><input name="email" type="email" required data-js="email">
+                        <label for="email">Email</label><input name="email" type="email" required>
                     </div>
                     <div class="form-input">
-                        <label for="senha">Senha</label><input name="senha" type="password" required data-js="senha">
+                        <label for="senha">Senha</label><input name="senha" type="password" required>
                     </div>
                     <div class="form-input">
                         <label for="rua">Endereço</label><input name="rua" type="text" id="rua" placeholder="rua" required>
@@ -34,7 +34,7 @@
                         <label for="estado"></label><input name="estado" type="text" class="estado" id="estado" placeholder="estado" required>
                         <label for="cep"></label><input name="cep" type="text" class="cep" id="cep" placeholder="cep" minlength="9" maxlength="9" data-js="cep" required>
                     </div>        
-                    <button type="submit" name="salvar" id="submit">Salvar</button> 
+                    <button type="submit" name="salvar" id="salvar">Salvar</button> 
                 </form>
             </div>
         </div>
