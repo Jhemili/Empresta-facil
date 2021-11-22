@@ -35,32 +35,30 @@
     }
 ?> 
 <?php include "head.php" ?>
-<body>
-    <?php include "side-menu.php" ?>
-    <main>
-<div class="card">
-    <div class="container-titulos">
-        <h1>Bem vindo de volta!</h1>
-        <h2>Log in para continuar.</h2>
-    </div>       
-    <div class="container">
-        <form action="" method="POST" name="login">
-            <div class="form-input">
-                <label for="email">E-mail</label>
-                <input class="email" type="email" name="email" placeholder="Digite o e-mail" required>
-            </div>
-            <div class="form-input">
-                <label for="senha">Senha</label>
-                <input class="senha" type="password" name="senha" required>
-                <?php 
-                    if(isset($_SESSION["erro"])){
-                        echo $_SESSION["erro"];
-                    }
-                ?>
-            </div>           
-            <button type="submit">Entrar</button>
-            <span class="msg-cadastro"><a href="cadastro_user.php">Novo por aqui? Cadastre-se</a></span>             
-        </form>
+<main>
+    <div class="card">
+        <div class="container-titulos">
+            <h1>Bem vindo de volta!</h1>
+            <h2>Log in para continuar.</h2>
+        </div>       
+        <div class="container">
+            <form action="" method="POST" name="login">
+                <div class="form-input">
+                    <label for="email">E-mail</label>
+                    <input class="email" type="email" name="email" placeholder="Digite o e-mail" required>
+                </div>
+                <div class="form-input">
+                    <label for="senha">Senha</label>
+                    <input class="senha" type="password" name="senha" required>
+                    <?php 
+                        if(isset($_SESSION["erro"])){
+                            echo $_SESSION["erro"];
+                        }
+                    ?>
+                </div>           
+                <button type="submit">Entrar</button>
+                <span class="msg-cadastro"><a href="cadastro_user.php">Novo por aqui? Cadastre-se</a></span>             
+            </form>
+        </div>
     </div>
-</div>
 </main>

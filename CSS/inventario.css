@@ -1,8 +1,30 @@
+.label-barra{
+    margin-right: .5em;
+}
+
+.input-barra{
+    width: 280px;
+}
+
+.pesquisar {
+    width: 100px;
+    margin-top: 0;
+}
+
+.container-itens {
+    padding-top: .5em;
+    
+}
+.exibe-item {
+    max-height: 400px;
+    overflow-y: scroll;
+}
 .item-cadastrado {
     display: flex;
     justify-content: space-between;
     background-color: var(--cor-bg-claro);
     padding: 1em;
+    margin-top: 1em;
 
 }
 
@@ -37,4 +59,9 @@
 
 .input-cadastrar {
     width: 490px;
+}
+
+.cadastrar-item {
+    width: 500px;
+    margin-top: 0;
 }
