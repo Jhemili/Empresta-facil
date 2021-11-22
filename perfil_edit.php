@@ -1,4 +1,5 @@
 <?php include "head.php";
+      include "side-menu.php";
       include "protect";
       include "conexao.php";
       include "format.php";
@@ -24,10 +25,10 @@
         $cep = format($cepMask,$dados['CEP']);
         $numero = $dados['numero'];
         $celular = format($celularMask,$dados['celular']);
-        if(empty($dados['telefone_fixo'])){
-            $telFixo = " ";
+        if(!empty($dados['telefone_fixo'])){
+            $telFixo = format($fixoMask,$dados['telefone_fixo']);
         } else {
-            $telFixo = format($telFixo,$dados['telefone_fixo']);
+            $telFixo = "";
         }
 
     }
@@ -50,7 +51,7 @@
                     </div>
                     <div class="form-input">
                         <label for="celular">Celular</label><input name="celular" type="tel" id="celular" maxlength="14" value="<?php echo $celular?>" data-js="celular">
-                        <label for="fixo">Telefone Residencial</label><input name="telefone_fixo" type="tel" value="<?php echo $telFixo?>" data-js="tel_fixo">
+                        <label for="fixo">Telefone Residencial</label><input name="telefone_fixo" maxlength="13" type="tel" value="<?php echo $telFixo?>" data-js="tel_fixo">
                     </div>
                     <div class="form-input">
                         <label for="email">Email</label><input name="email" type="email" value="<?php echo $email ?>" required>
