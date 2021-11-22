@@ -21,17 +21,16 @@
         $bairro = $dados['bairro'];
         $cidade = $dados['cidade'];
         $estado = $dados['estado'];
-        $cep = $dados['CEP'];
+        $cep = format($cepMask,$dados['CEP']);
         $numero = $dados['numero'];
-        $celular = $dados['celular'];
+        $celular = format($celularMask,$dados['celular']);
         if(empty($dados['telefone_fixo'])){
             $telFixo = " ";
         } else {
-            $telFixo = $dados['telefone_fixo'];
+            $telFixo = format($telFixo,$dados['telefone_fixo']);
         }
 
     }
-
 
 ?>
 
@@ -42,7 +41,7 @@
                 <h2>Edite e salve suas informações pessoais</h2>
             </div>       
             <div class="container container-form-perfil">
-                <form action="processa_cadastro.php" method="POST" name="perfil">
+                <form action="salva_perfil_edit.php" method="POST" name="salvaPerfil">
                     <div class="form-input">
                         <label for="nome">Nome</label> <input name="nome_usuario" type="text" id="text" value="<?php echo $nome?>" maxlength="45" required>
                     </div>
@@ -51,7 +50,7 @@
                     </div>
                     <div class="form-input">
                         <label for="celular">Celular</label><input name="celular" type="tel" id="celular" maxlength="14" value="<?php echo $celular?>" data-js="celular">
-                        <label for="fixo">Telefone Residencial</label><input name="telefone_fixo" type="tel" value="<?php echo $telFixo?>">
+                        <label for="fixo">Telefone Residencial</label><input name="telefone_fixo" type="tel" value="<?php echo $telFixo?>" data-js="tel_fixo">
                     </div>
                     <div class="form-input">
                         <label for="email">Email</label><input name="email" type="email" value="<?php echo $email ?>" required>

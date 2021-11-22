@@ -34,10 +34,13 @@
                 $endereco = "INSERT INTO endereco (rua,bairro,cidade,numero,estado,CEP) VALUES ('$rua','$bairro','$cidade','$numero','$estado','$sanitCep')";
                 $insereEndereco = mysqli_query($conn,$endereco);
                 $idEndereco = $conn->insert_id;
+                
 
                 $telefone = "INSERT INTO telefone (celular,telefone_fixo) VALUES ('$sanitCelular', '$sanitTel')";
                 $insereTelefone = mysqli_query($conn,$telefone);
                 $idTelefone = $conn->insert_id;
+                
+
         
                 $usuario = "INSERT INTO usuario (nome_usuario, sobrenome, email, senha,telefone,endereco) VALUES ('$nome', '$sobrenome', '$email', '$senha','$idTelefone','$idEndereco')";
                 $insereUsuario = mysqli_query($conn,$usuario);
