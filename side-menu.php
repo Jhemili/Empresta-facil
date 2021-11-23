@@ -6,7 +6,7 @@
     </div>    
     <ul class="nav" id="nav">
         <li><a href="inventario.php">Inventário</a></li>
-        <li><a href="itens-emprestados.php">Itens Emprestados</a></li>
+        <li><a href="itens_emprestados.php">Itens Emprestados</a></li>
         <li><a href="perfil_edit.php">Perfil</a></li>
         <li><a href="logout.php">Sair</a></li>
     </ul>    
