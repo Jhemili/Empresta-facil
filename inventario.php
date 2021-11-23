@@ -26,6 +26,7 @@ if(!isset($_POST['enviar']))
             <div class="container-titulos">
                 <h1>Inventário</h1>
                 <h2>Gerencie seus itens.</h2>
+                <p class="descricao-card">Itens já emprestados não são exibidos.</p>
             </div> 
             <div class="container barra-pesquisa">
             <form method="POST" action="" class="form-barra">
@@ -49,8 +50,8 @@ if(!isset($_POST['enviar']))
                                 <input type='hidden' name='idItem' value='$idItem'>
                                 </div>
                                 <div class='item-div div-botoes'>
-                                <button type='submit' name='emprestar' class='bt-emprestar'>emprestar</button>
-                                <button class='bt-excluir'>excluir</button></div></form>";
+                                <button type='submit' name='emprestar' value='emprestar' class='bt-emprestar'>emprestar</button>
+                                <button type='submit' name='excluir' value='excluir' class='bt-excluir'>excluir</a></button></div></form>";
                             }                    
                         } 
                     ?>   

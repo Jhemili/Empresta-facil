@@ -37,8 +37,7 @@
         $updateItem = $conn->query($updateItem);
 
     }
-   
-
+    
     header("Location: inventario.php");
 
 ?>

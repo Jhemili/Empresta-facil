@@ -25,7 +25,7 @@
                 $_SESSION['user'] = $usuario['id_usuario'];
                 $_SESSION['name'] = $usuario['nome_usuario'];
 
-                header("Location: inventario.php");
+                header("Location: itens_emprestados.php");
 
             } else {
                 $_SESSION["erro"] = "usuário ou senha incorreto!";

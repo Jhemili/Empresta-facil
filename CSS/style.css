@@ -25,6 +25,11 @@ h2 {
     color: var(--cor-titulo);
 }
 
+.descricao-card{
+    font-size: .8em;
+    color: var(--cor-titulo);
+}
+
 /* BOTÃO */
 
 button {

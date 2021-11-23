@@ -56,7 +56,7 @@ if(!isset($_POST['enviar']))
                         } 
                     ?>   
             </div>
-            <div class="container"><button class="cadastrar-item"><a class="bt-link" href="cadastrar_item.php">cadastrar novo</a> </button></div>
+            <div class="container"><button class="cadastrar-item"><a class="bt-link" href="inventario.php">novo empréstimo</a> </button></div>
         </div>
     </main>
 <?php include "footer.php"?>
