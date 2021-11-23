@@ -17,8 +17,6 @@ if(!isset($_POST['enviar']))
     unset($_POST['enviar']);
 }
 
-
-
 ?>
 
 <body>
@@ -42,16 +40,16 @@ if(!isset($_POST['enviar']))
                             $nomeItem = $item['nome_item'];
                             $descricao = $item['descricao'];
                             $status = $item['status'];
-
-                            echo "<div class='item-cadastrado'>
-                            <div class='item-div'> 
-                            <h3 class='nome-item'>$nomeItem</h3>
-                            <p class='descricao-item'>$descricao</p>
-                            </div>
-                            <div class='item-div div-botoes'>
-                            <button class='emprestar'><a class='bt-link' href='emprestar.php'>emprestar</a></button>
-                            <button class='excluir'>excluir</button></div></div>";
-                    
+                            if ($status == 0 ){
+                                echo "<div class='item-cadastrado'>
+                                <div class='item-div'> 
+                                <h3 class='nome-item'>$nomeItem</h3>
+                                <p class='descricao-item'>$descricao</p>
+                                </div>
+                                <div class='item-div div-botoes'>
+                                <button class='bt-emprestar'><a class='bt-link' href='emprestar.php'>emprestar</a></button>
+                                <button class='bt-excluir'>excluir</button></div></div>";
+                            }                    
                         } 
                     ?>   
             </div>
