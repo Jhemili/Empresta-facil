@@ -39,6 +39,7 @@ button {
 }
 button:hover {
     background-color: var(--cor-bt-hover);
+    cursor: pointer;
 }
 
 /* CARD GENÉRICO */

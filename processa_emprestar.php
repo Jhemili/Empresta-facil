@@ -1,17 +1,23 @@
-<?php include "head.php";
-      include "side-menu.php";
-      include "protect.php"; 
+<?php 
+    include "head.php";
+    include "side-menu.php";
+    include "protect.php";
+    include "conexao.php";
+  
+    $idItem = filter_input(INPUT_POST,'idItem');        
 ?>
-    <main>
+
+<main>
         <div class="card">
             <div class="container-titulos">
                 <h1>Emprestar</h1>
                 <h2>Indique o destinatário <br>e data de retorno do item</h2>
             </div>       
             <div class="container container-form-emprestar">
-                <form action="" method="POST" name="emprestar">
+                <form action="salva_emprestar.php" method="POST" name="emprestar">
                     <div class="form-input">
                         <label for="destinatario">Destinatário</label> <input name="destinatario" type="text" required>
+                        <input type="hidden" name="idItem" value="<?php echo $idItem ?>">
                     </div>
                     <div class="form-input">
                         <label for="celular">Contato</label><input name="celular" type="tel" id="celular" maxlength="14" data-js="celular" placeholder="celular" required>
