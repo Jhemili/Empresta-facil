@@ -11,3 +11,12 @@
         <li><a href="logout.php">Sair</a></li>
     </ul>    
 </div>
+
+
+
+<script>
+    function onClickMenu(){
+    document.getElementById("menu").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    }
+</script>

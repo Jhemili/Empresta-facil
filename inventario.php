@@ -11,9 +11,9 @@
                 <h2>Gerencie seus itens.</h2>
             </div> 
             <div class="container barra-pesquisa">
-            <form method="POST" action="" class="form-barra">
+            <form method="POST" action="pesquisa_item.php" class="form-barra">
             <label for="barraPesquisa" class="label-barra">Pesquisar</label><input type="text" class="input-barra" name="barraPesquisa">
-            <button type="submit" class="pesquisar">pesquisar</button>
+            <button type="submit" name="pesquisar" class="pesquisar">pesquisar</button>
             </form>      
             </div>
             <div class="container container-itens exibe-item">
@@ -30,4 +30,4 @@
             <div class="container"><button class="cadastrar-item"><a class="bt-link" href="cadastrar_item.php">cadastrar novo</a> </button></div>
         </div>
     </main>
-
+<?php include "footer.php"?>
