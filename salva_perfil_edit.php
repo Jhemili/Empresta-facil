@@ -51,7 +51,7 @@ if(isset($_POST['salvar'])){
     $usuario = "UPDATE usuario SET nome_usuario = '$nome', sobrenome = '$sobrenome', email = '$email', senha = '$senha' WHERE id_usuario = '$idUsuario'";
     $updateUsuario = mysqli_query($conn,$usuario);
     
-
+    header("Location: perfil_edit.php");
 
 } 
 

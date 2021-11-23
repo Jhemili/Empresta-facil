@@ -46,7 +46,7 @@
                 $insereUsuario = mysqli_query($conn,$usuario);
         
         
-                echo "<script>window.location='perfil.php';alert('Dados salvos com sucesso!');</script>"; 
+                echo "<script>window.location='login.php';alert('Dados salvos com sucesso!');</script>"; 
 
             } else {
                 echo "<script>window.location='login.php';alert('Usuario já cadastrado')</script>";

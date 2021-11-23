@@ -61,9 +61,9 @@
                     </div>
                     <div class="form-input">
                         <label for="rua">Endereço</label><input name="rua" type="text" id="rua" value="<?php echo $rua?>" required>
+                        <label for="numero"></label><input name="numero" type="text" class="numero" id="numero" value="<?php echo $numero?>" required>
                         <label for="bairro"></label> <input name="bairro" type="text" id="bairro" value="<?php echo $bairro?>" required>
                         <label for="cidade"></label><input name="cidade" type="text" class="cidade" id="cidade" value="<?php echo $cidade?>" required>
-                        <label for="numero"></label><input name="numero" type="text" class="numero" id="numero" value="<?php echo $numero?>" required>
                         <label for="estado"></label><input name="estado" type="text" class="estado" id="estado" value="<?php echo $estado?>" required>
                         <label for="cep"></label><input name="cep" type="text" class="cep" id="cep" value="<?php echo $cep?>" minlength="9" maxlength="9" data-js="cep" required>
                     </div>        

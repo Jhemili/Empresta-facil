@@ -1,9 +1,9 @@
 .line {
     display: block;
     background-color: var(--cor-hamburger);
-    width: 30px;
-    height: 5px;
-    margin: 4px;
+    width: 35px;
+    height: 7px;
+    margin: 5px;
     border-radius: 10px;
 }
 
@@ -25,14 +25,15 @@ a {
 
 #menu {
     cursor: pointer;
-
+    margin: 1em 1em;
 }
 
 .side-menu {
     width: 300px;
     height: 100vh;
     display: flex;
-    
+    align-self: flex-start;
+
 }
 
 .nav {

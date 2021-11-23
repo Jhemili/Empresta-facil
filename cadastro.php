@@ -28,9 +28,9 @@
                     </div>
                     <div class="form-input">
                         <label for="rua">Endereço</label><input name="rua" type="text" id="rua" placeholder="rua" required>
+                        <label for="numero"></label><input name="numero" type="text" class="numero" id="numero" placeholder="número" required>
                         <label for="bairro"></label> <input name="bairro" type="text" id="bairro" placeholder="bairro" required>
                         <label for="cidade"></label><input name="cidade" type="text" class="cidade" id="cidade" placeholder="cidade" required>
-                        <label for="numero"></label><input name="numero" type="text" class="numero" id="numero" placeholder="número" required>
                         <label for="estado"></label><input name="estado" type="text" class="estado" id="estado" placeholder="estado" required>
                         <label for="cep"></label><input name="cep" type="text" class="cep" id="cep" placeholder="cep" minlength="9" maxlength="9" data-js="cep" required>
                     </div>        
