@@ -6,12 +6,14 @@ if(!isset($_SESSION)){
     session_start();
 }
 $idUsuario = $_SESSION['user'];
+
+
 $pesquisar = $_POST['barraPesquisa'];
 if(isset($_POST['enviar'])){   
+    
     $sqlBusca = "SELECT * FROM itens WHERE nome_item LIKE '%$pesquisar%' AND usuario = $idUsuario";
     $sqlBuscando = $conn->query($sqlBusca) or die($conn->error); 
 
-    
 }
 
 ?>
@@ -25,7 +27,7 @@ if(isset($_POST['enviar'])){
                 <h2>Gerencie seus itens.</h2>
             </div> 
             <div class="container barra-pesquisa">
-            <form method="POST" action="pesquisa_item.php" class="form-barra">
+            <form method="POST" action="" class="form-barra">
             <label for="barraPesquisa" class="label-barra">Pesquisar</label><input type="text" class="input-barra" name="barraPesquisa">
             <button type="submit" name="enviar" class="pesquisar">enviar</button>
             </form>      
