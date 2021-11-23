@@ -91,7 +91,7 @@ label {
 
 form h3 {
     color: var(--cor-gray);
-    font-size: .8EM;
+    font-size: .8em;
     font-weight: 400;
     display: inline-block;
 }

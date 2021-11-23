@@ -8,7 +8,7 @@ if(!isset($_SESSION)){
 $idUsuario = $_SESSION['user'];  
 if(!isset($_POST['enviar']))
 {
-    $sqlBusca = "SELECT * FROM itens INNER JOIN destinatario WHERE usuario = $idUsuario AND estatus = 1";
+    $sqlBusca = "SELECT * FROM itens INNER JOIN destinatario ON itens.destinatario = destinatario.id_destinatario WHERE usuario = $idUsuario AND estatus = 1";
     $sqlBuscando = $conn->query($sqlBusca) or die($conn->error);
 } else {
     $pesquisar = $_POST['barraPesquisa'];
@@ -46,7 +46,7 @@ if(!isset($_POST['enviar']))
                             echo "<form method='POST' action = 'receber_item.php' class='item-cadastrado'>
                             <div class='item-div'> 
                             <h3 class='nome-item'>$nomeItem</h3>
-                            <span>$destinatario</span>
+                            <p>$destinatario</p>
                             <input type='hidden' name='idItem' value='$idItem'>
                             </div>
                             <div class='item-div div-botoes'>

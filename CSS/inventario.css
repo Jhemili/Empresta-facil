@@ -72,7 +72,6 @@
 }
 
 .data-retorno{
-    background-color: var(--cor-branco);
     color: var(--cor-destaque);
     font-weight: bolder;
     padding: .5em 1em;

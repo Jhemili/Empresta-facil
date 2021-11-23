@@ -57,7 +57,7 @@
                     ?>
                 </div>           
                 <button type="submit">Entrar</button>
-                <span class="msg-cadastro"><a href="cadastro_user.php">Novo por aqui? Cadastre-se</a></span>             
+                <span class="msg-cadastro"><a href="cadastro.php">Novo por aqui? Cadastre-se</a></span>             
             </form>
         </div>
     </div>
