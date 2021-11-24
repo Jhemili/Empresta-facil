@@ -33,8 +33,10 @@
     padding-bottom: 1em;
 }
 
-.item-div {
-    width: 50%;
+.div-botoes {
+    width: 150px;
+    padding: 0;
+    text-align: center;
 }
 
 .item-div h3,
@@ -71,9 +73,14 @@
     margin-top: 0;
 }
 
-.data-retorno{
-    color: var(--cor-destaque);
-    font-weight: bolder;
-    padding: .5em 1em;
-    border-radius: 30px;
+mark {
+    display: block;
+    width: 100px;
+    background-color: var(--cor-destaque);
+    border-radius: 4px;
+}
+
+.tx-data {
+    font-size: .9em;
+    
 }

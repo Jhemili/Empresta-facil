@@ -35,7 +35,7 @@ if (isset($_POST['emprestar']))
         </div>
     </main>";
 } 
-if (isset($_POST['excluir'])){
+elseif (isset($_POST['excluir'])){
     $sqlExcluir = "DELETE FROM itens WHERE itens.id_item = '$idItem'";
     $sqlExcluir = $conn->query($sqlExcluir);
     header("Location: inventario.php");

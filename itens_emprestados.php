@@ -17,7 +17,8 @@ if(!isset($_POST['enviar']))
     $sqlBuscando = $conn->query($sqlBusca) or die($conn->error);  
     unset($_POST['enviar']);
 }
-      
+
+
 ?>
 <body>
     <?php include "side-menu.php" ?>
@@ -44,7 +45,10 @@ if(!isset($_POST['enviar']))
                             $status = $item['estatus'];
                             $retorna = $item['data_retorno'];
                             $data = date('d-m-Y', strtotime($retorna));
-
+                            $now = date('d-m-Y');
+                            if(strtotime($data) < strtotime($now)){
+                                $data = str_replace($data,'<mark>'.$data.'</mark>',$data);
+                            }
                             echo "<form method='POST' action = 'receber_item.php' class='item-cadastrado'>
                             <div class='item-div'> 
                             <h3 class='nome-item'>$nomeItem</h3>
@@ -52,8 +56,8 @@ if(!isset($_POST['enviar']))
                             <input type='hidden' name='idItem' value='$idItem'>
                             </div>
                             <div class='item-div div-botoes'>
-                            <span>Data retorno</span>
-                            <span class='data-retorno'>$data</span>
+                            <span class='tx-data' >Data retorno</span>
+                            <span id='data' class='data-retorno'>$data</span>
                             <button type='submit' name='receber' class='bt'>receber</button></div></form>";
                                               
                         } 
