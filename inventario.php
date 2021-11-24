@@ -8,11 +8,11 @@ if(!isset($_SESSION)){
 $idUsuario = $_SESSION['user'];  
 if(!isset($_POST['enviar']))
 {
-    $sqlBusca = "SELECT * FROM itens WHERE usuario = $idUsuario";
+    $sqlBusca = "SELECT * FROM itens WHERE usuario = $idUsuario AND estatus = 0";
     $sqlBuscando = $conn->query($sqlBusca) or die($conn->error);
 } else {
     $pesquisar = $_POST['barraPesquisa'];
-    $sqlBusca = "SELECT * FROM itens WHERE nome_item LIKE '%$pesquisar%' AND usuario = $idUsuario";
+    $sqlBusca = "SELECT * FROM itens WHERE nome_item LIKE '%$pesquisar%' AND usuario = $idUsuario  AND estatus = 0";
     $sqlBuscando = $conn->query($sqlBusca) or die($conn->error);  
     unset($_POST['enviar']);
 }
@@ -42,17 +42,23 @@ if(!isset($_POST['enviar']))
                             $nomeItem = $item['nome_item'];
                             $descricao = $item['descricao'];
                             $status = $item['estatus'];
-                            if ($status == 0 ){
-                                echo "<form action='processa_emprestar.php' method='POST' class='item-cadastrado'>
-                                <div class='item-div'> 
-                                <h3 class='nome-item'>$nomeItem</h3>
-                                <p class='descricao-item'>$descricao</p>
-                                <input type='hidden' name='idItem' value='$idItem'>
-                                </div>
-                                <div class='item-div div-botoes'>
-                                <button type='submit' name='emprestar' value='emprestar' class='bt-emprestar'>emprestar</button>
-                                <button type='submit' name='excluir' value='excluir' class='bt-excluir'>excluir</a></button></div></form>";
-                            }                    
+                            $retornou = $item['data_emprestimo'];
+                            if($retornou == null){
+                                $retornou = 'nunca foi emprestado';
+                            } else {
+                                $retornou = 'Devolvido em: '.date('d-m-Y', strtotime($item['data_retorno']));
+                            }
+                            echo "<form action='processa_emprestar.php' method='POST' class='item-cadastrado'>
+                            <div class='item-div'> 
+                            <h3 class='nome-item'>$nomeItem</h3>
+                            <p class='descricao-item'>Descrição: $descricao</p>
+                            <p class='retornou'>$retornou</p>
+                            <input type='hidden' name='idItem' value='$idItem'>
+                            </div>
+                            <div class='item-div div-botoes'>
+                            <button type='submit' name='emprestar' value='emprestar' class='bt-emprestar'>emprestar</button>
+                            <button type='submit' name='excluir' value='excluir' class='bt-excluir'>excluir</a></button></div></form>";
+                                               
                         } 
                     ?>   
             </div>

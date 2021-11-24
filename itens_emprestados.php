@@ -45,7 +45,7 @@ if(!isset($_POST['enviar']))
                             $status = $item['estatus'];
                             $retorna = $item['data_retorno'];
                             $data = date('d-m-Y', strtotime($retorna));
-                            $now = date('d-m-Y');
+                            $now = date('d-m-Y');    
                             if(strtotime($data) < strtotime($now)){
                                 $data = str_replace($data,'<mark>'.$data.'</mark>',$data);
                             }

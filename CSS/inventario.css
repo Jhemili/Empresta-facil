@@ -84,3 +84,14 @@ mark {
     font-size: .9em;
     
 }
+
+.retornou {
+    font-family: var(--ff-titulo);
+    color: var(--cor-gray);
+}
+
+.nome-item {
+    color: var(--cor-primaria);
+    font-weight: 600;
+
+}
