@@ -6,6 +6,7 @@ if(!isset($_SESSION)){
     session_start();
 }
 $idUsuario = $_SESSION['user'];  
+
 if(!isset($_POST['enviar']))
 {
     $sqlBusca = "SELECT * FROM itens INNER JOIN destinatario ON itens.destinatario = destinatario.id_destinatario WHERE usuario = $idUsuario AND estatus = 1";
@@ -42,6 +43,7 @@ if(!isset($_POST['enviar']))
                             $destinatario = $item['nome_destinatario'];
                             $status = $item['estatus'];
                             $retorna = $item['data_retorno'];
+                            $data = date('d-m-Y', strtotime($retorna));
 
                             echo "<form method='POST' action = 'receber_item.php' class='item-cadastrado'>
                             <div class='item-div'> 
@@ -51,7 +53,7 @@ if(!isset($_POST['enviar']))
                             </div>
                             <div class='item-div div-botoes'>
                             <span>Data retorno</span>
-                            <span class='data-retorno'>$retorna</span>
+                            <span class='data-retorno'>$data</span>
                             <button type='submit' name='receber' class='bt'>receber</button></div></form>";
                                               
                         } 
