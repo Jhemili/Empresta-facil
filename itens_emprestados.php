@@ -1,6 +1,7 @@
 <?php 
       include "conexao.php";
       include "head.php";
+      include "format.php";
       include "protect.php";
 if(!isset($_SESSION)){
     session_start();
@@ -42,7 +43,12 @@ if(!isset($_POST['enviar']))
                             $nomeItem = $item['nome_item'];
                             $descricao = $item['descricao'];
                             $destinatario = $item['nome_destinatario'];
-                            $telefone = $item['celular'];
+                            $celular = format($celularMask,$item['celular']);
+                            if(!empty($item['telefone_fixo'])){
+                                $telFixo = format($fixoMask,$item['telefone_fixo']);
+                            } else {
+                                $telFixo = "";
+                            }
                             $status = $item['estatus'];
                             $retorna = $item['data_retorno'];
                             $data = date('d-m-Y', strtotime($retorna));
@@ -54,12 +60,12 @@ if(!isset($_POST['enviar']))
                             <div class='item-div'> 
                             <h3 class='nome-item'>$nomeItem</h3>
                             <p>$destinatario</p>
-                            <p>$telefone</p>
+                            <p>$celular</p>
+                            <p>$telFixo</p>
                             <input type='hidden' name='idItem' value='$idItem'>
                             </div>
                             <div class='item-div div-botoes'>
-                            <span class='tx-data' >Data retorno</span>
-                            <span id='data' class='data-retorno'>$data</span>
+                            <span class='tx-data' >Data retorno<br>$data</span>
                             <button type='submit' name='receber' class='bt'>receber</button></div></form>";
                                               
                         } 
