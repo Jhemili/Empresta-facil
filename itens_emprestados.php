@@ -9,7 +9,7 @@ $idUsuario = $_SESSION['user'];
 
 if(!isset($_POST['enviar']))
 {
-    $sqlBusca = "SELECT * FROM itens INNER JOIN destinatario ON itens.destinatario = destinatario.id_destinatario WHERE usuario = $idUsuario AND estatus = 1";
+    $sqlBusca = "SELECT * FROM itens INNER JOIN destinatario ON itens.destinatario = destinatario.id_destinatario INNER JOIN telefone ON destinatario.telefone = telefone.id_telefone WHERE itens.estatus = 1 AND itens.usuario = $idUsuario";
     $sqlBuscando = $conn->query($sqlBusca) or die($conn->error);
 } else {
     $pesquisar = $_POST['barraPesquisa'];
@@ -42,6 +42,7 @@ if(!isset($_POST['enviar']))
                             $nomeItem = $item['nome_item'];
                             $descricao = $item['descricao'];
                             $destinatario = $item['nome_destinatario'];
+                            $telefone = $item['celular'];
                             $status = $item['estatus'];
                             $retorna = $item['data_retorno'];
                             $data = date('d-m-Y', strtotime($retorna));
@@ -53,6 +54,7 @@ if(!isset($_POST['enviar']))
                             <div class='item-div'> 
                             <h3 class='nome-item'>$nomeItem</h3>
                             <p>$destinatario</p>
+                            <p>$telefone</p>
                             <input type='hidden' name='idItem' value='$idItem'>
                             </div>
                             <div class='item-div div-botoes'>
