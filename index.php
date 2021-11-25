@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empreste Fácil - Home</title>    
+    <title>Empresta Fácil - Home</title>    
     <link rel="stylesheet" href="CSS/tipografia.css">
     <link rel="stylesheet" href="CSS/home.css">
 
@@ -32,13 +32,14 @@
             <div class="cont-bloco">
                 <h2>Como funciona?</h2>
                 <h3>Faça seu cadastro </h3>
-                <p>Uma vez que você fez seu cadastro, você pode iniciar cadastrando seus itens que podem ser emprestados.</p>
+                <p>Uma vez que você fez seu cadastro, você poderá acessar o sistema e cadastrar os itens que serão emprestados.</p>
             </div>
         </div>
         <div class="cont-divisao">
             <div class="cont-bloco">
-                <h3>Empreste</h3>
-                <p>Com seu item cadastrado, você poderá escolher o destinatário e especificar a data de retorno. </p>
+                <h2>Empreste</h2>
+                <p>Com seu item cadastrado, você poderá escolher o destinatário, anotar o contato e a data de retorno.</p>
+                <p>Pronto! Agora você tem a relação dos itens emprestados, simples e fácil. </p>
             </div>
             <div class="cont-bloco">
                 <img class="numero-sobreposto" src="IMG/numero2.png" alt="">
@@ -51,10 +52,9 @@
                 <img class="calendario" src="IMG/calendario.jpg" alt="">
             </div>
             <div class="cont-bloco">
-                <h3>Organização</h3>
-                <p>Emprestou algo? 
-                    Nós mantemos seus registros organizados para que você sempre saiba com quem seus itens estão e quando retornarão para você.
-                </p>
+                <h2>Organização</h2>
+                <h3>Emprestou algo?</h3> 
+                    <p>Nós mantemos seus registros organizados para que você sempre saiba com quem seus itens estão e quando retornarão para você.</p>
             </div>
         </div>
         <div class="cont-divisao"><button><a href="cadastro.php">Experimente agora</a></button></div>        
