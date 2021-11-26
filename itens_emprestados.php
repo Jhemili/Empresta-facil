@@ -70,7 +70,9 @@ if(!isset($_POST['enviar']))
                             </form>
                             ";
                                               
-                        } 
+                        } if($sqlBuscando->num_rows == 0){
+                            echo "<h2 class='msg-item'>Nenhum item emprestado<h2>";
+                        }
                     ?>   
             </div>
             <div class="container on-print-hide"><button class="cadastrar-item"><a class="bt-link" href="inventario.php">novo empréstimo</a> </button>

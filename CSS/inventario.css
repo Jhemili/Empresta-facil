@@ -104,6 +104,11 @@ mark {
 .bt-print:hover{
     background-color: var(--cor-bt-print-hover);
 }
+
+.msg-item {
+    text-align: center;
+    
+}
 @media print {
     mark {
         color: var(--cor-destaque);
