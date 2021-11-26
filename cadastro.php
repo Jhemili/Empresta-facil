@@ -17,8 +17,8 @@
                         <label for="sobrenome">Sobrenome</label> <input name="sobrenome" type="text" id="sobrenome" maxlength="45" placeholder="sobrenome" required>
                     </div>
                     <div class="form-input">
-                        <label for="celular">Celular</label><input name="celular" type="tel" id="celular" maxlength="14" data-js="celular">
-                        <label for="fixo">Telefone Residencial</label><input name="telefone_fixo" type="tel" id="tel_fixo" maxlength="13" data-js="tel_fixo">
+                        <label for="celular">Celular</label><input name="celular" type="tel" id="celular" pattern=".{14,14}" maxlength="14" data-js="celular">
+                        <label for="fixo">Telefone Residencial</label><input name="telefone_fixo" type="tel" id="tel_fixo" pattern=".{13,13}" maxlength="13" data-js="tel_fixo">
                     </div>
                     <div class="form-input">
                         <label for="email">Email</label><input name="email" type="email" required>
