@@ -5,6 +5,7 @@ const masks = {
         .replace(/(\d{0})(\d)/,'$1($2')  //2 GRUPOS DE CAPTURA
         .replace(/(\d{2})(\d)/, '$1)$2') 
         .replace(/(\d{5})(\d)/, '$1-$2')
+        
     },
 
     tel_fixo (value){

@@ -60,9 +60,7 @@ if(!isset($_POST['enviar']))
                             <button type='submit' name='excluir' value='excluir' class='bt-excluir'>excluir</a></button></div></form>";
                                                
                         } 
-                        if($sqlBuscando->num_rows == 0){
-                        echo "<h2 class='msg-item'>Nenhum item cadastrado<h2>";
-                        }
+                        
                     ?>   
             </div>
             <div class="container"><button class="cadastrar-item"><a class="bt-link" href="cadastrar_item.php">cadastrar novo</a> </button></div>

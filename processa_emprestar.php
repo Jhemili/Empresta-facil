@@ -22,8 +22,8 @@ if (isset($_POST['emprestar']))
                         <input type='hidden' name='idItem' value='$idItem'>
                     </div>
                     <div class='form-input'>
-                        <label for='celular'>Contato</label><input name='celular' type='tel' id='celular' maxlength='14' data-js='celular' placeholder='celular' required>
-                        <input name='telefone_fixo' type='tel' id='tel-fixo' maxlength='13' data-js='tel_fixo' placeholder='telefone fixo'>
+                        <label for='celular'>Contato</label><input name='celular' type='text' id='celular' pattern='.{14,14}' maxlength='14' data-js='celular' placeholder='celular' required>
+                        <input name='telefone_fixo' type='text' id='tel-fixo' pattern='.{13,13}' maxlength='13' data-js='tel_fixo' placeholder='telefone fixo'>
                     </div>
                     <div class='form-input'>
                         <label for='data-retorno'>Data de retorno</label> <input name='dataRetorno' type='date' required>

@@ -1,7 +1,12 @@
 <?php
 function format($mask,$string)
-{
-    return  vsprintf($mask, str_split($string));
+{   
+    if(strlen($string) < 11){
+        return '('.$string;
+    } else {
+        return  vsprintf($mask, str_split($string));
+    }
+    
 } 
 
 $celularMask = '(%s%s)%s%s%s%s%s-%s%s%s%s';
