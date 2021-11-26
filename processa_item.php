@@ -1,5 +1,5 @@
 <?php 
-include "conexao.php";
+require "conexao.php";
 include "protect.php";
 
 if(!isset($_SESSION)){
@@ -20,6 +20,6 @@ if(isset($_POST['cadastrar']))
     echo "<script>window.location='inventario.php';alert('Item cadastrado com sucesso!');</script>"; 
 
 }
-
+$conn->close();
 
 ?>

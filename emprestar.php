@@ -25,4 +25,4 @@
             </div>
         </div>
     </main>
-<?php include "footer.php" ?>
+<?php include "scripts.php" ?>

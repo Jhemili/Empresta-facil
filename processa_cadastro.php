@@ -1,6 +1,6 @@
 <?php
 
-    include("conexao.php");
+    require("conexao.php");
     
     if(isset($_POST['salvar'])){
         $nome = filter_input(INPUT_POST, 'nome_usuario', FILTER_SANITIZE_STRING);

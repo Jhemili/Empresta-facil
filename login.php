@@ -1,5 +1,5 @@
 <?php
-    include('conexao.php');
+    require 'conexao.php';
 
     if(isset($_POST['email']) or isset($_POST['senha'])){
         if(strlen($_POST['email']) == 0){

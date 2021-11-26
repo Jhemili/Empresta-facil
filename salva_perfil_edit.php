@@ -1,4 +1,4 @@
-<?php include "conexao.php";
+<?php require "conexao.php";
       include "protect.php"; 
       
 if(!isset($_SESSION)){

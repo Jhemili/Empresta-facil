@@ -1,7 +1,7 @@
 <?php 
-      include "conexao.php";
-      include "head.php";
+      require "conexao.php";
       include "protect.php";
+      include "head.php";
 if(!isset($_SESSION)){
     session_start();
 }
@@ -65,4 +65,5 @@ if(!isset($_POST['enviar']))
             <div class="container"><button class="cadastrar-item"><a class="bt-link" href="cadastrar_item.php">cadastrar novo</a> </button></div>
         </div>
     </main>
-<?php include "footer.php"?>
+  
+

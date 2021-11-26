@@ -1,9 +1,9 @@
-<?php include "head.php";
-      include "side-menu.php";
+<?php 
       include "protect";
-      include "conexao.php";
+      require "conexao.php";
+      include "head.php";
+      include "side-menu.php";
       include "format.php";
-
 
       if(!isset($_SESSION)){
         session_start();
@@ -72,4 +72,4 @@
             </div>
         </div>
     </main>
-<?php include "footer.php" ?>
+<?php include "scripts.php" ?>

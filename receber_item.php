@@ -1,7 +1,7 @@
 <?php 
-      include "conexao.php";
-      include "head.php";
+      require "conexao.php";
       include "protect.php";
+
 
 if(!isset($_SESSION)){
     session_start();

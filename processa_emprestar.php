@@ -1,7 +1,6 @@
 <?php 
-
     include "protect.php";
-    include "conexao.php";
+    require "conexao.php";
   
     $idItem = filter_input(INPUT_POST,'idItem');        
 
@@ -41,5 +40,4 @@ elseif (isset($_POST['excluir'])){
     header("Location: inventario.php");
 }
 
-
-include "footer.php" ?>
+include "scripts.php" ?>

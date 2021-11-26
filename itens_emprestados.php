@@ -1,8 +1,8 @@
 <?php 
-      include "conexao.php";
+      require "conexao.php";
+      include "protect.php";
       include "head.php";
       include "format.php";
-      include "protect.php";
 if(!isset($_SESSION)){
     session_start();
 }
@@ -74,4 +74,4 @@ if(!isset($_POST['enviar']))
             <div class="container"><button class="cadastrar-item"><a class="bt-link" href="inventario.php">novo empréstimo</a> </button></div>
         </div>
     </main>
-<?php include "footer.php"?>
+<?php include "scripts.php"?>
