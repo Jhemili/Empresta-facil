@@ -6,6 +6,6 @@ define ("SENHA", null);
 define ("BANCODEDADOS","Empresta_facil");
 
 //CONEXÃO
-$conn = new mysqli(SERVIDOR, USUARIO, SENHA, BANCODEDADOS) or die("Erro ao conectar: ". mysqli_connect_error());
+$conn = new mysqli(SERVIDOR, USUARIO, SENHA, BANCODEDADOS) or die("Erro ao conectar: ". $conn->connect_error);
 
 ?>

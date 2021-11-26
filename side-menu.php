@@ -1,4 +1,4 @@
-<div class="side-menu">
+<div class="side-menu on-print-hide">
     <div id="menu" onclick="onClickMenu()">
         <span class="line" id="line1"></span>
         <span class="line" id="line2"></span>

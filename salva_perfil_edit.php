@@ -1,5 +1,5 @@
 <?php require "conexao.php";
-      include "protect.php"; 
+      require_once "protect.php"; 
       
 if(!isset($_SESSION)){
 session_start();

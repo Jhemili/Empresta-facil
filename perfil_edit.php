@@ -1,6 +1,6 @@
 <?php 
-      include "protect";
       require "conexao.php";
+      include "protect";
       include "head.php";
       include "side-menu.php";
       include "format.php";

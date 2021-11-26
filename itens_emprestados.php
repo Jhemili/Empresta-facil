@@ -27,9 +27,9 @@ if(!isset($_POST['enviar']))
         <div class="card">
             <div class="container-titulos">
                 <h1>Itens Emprestados</h1>
-                <h2>Visualize datas de retorno e<br> receba itens</h2>
+                <h2 class="on-print-hide">Visualize datas de retorno e<br> receba itens</h2>
             </div> 
-            <div class="container barra-pesquisa">
+            <div class="container barra-pesquisa on-print-hide">
             <form method="POST" action="" class="form-barra">
             <label for="barraPesquisa" class="label-barra">Pesquisar</label><input type="text" class="input-barra" name="barraPesquisa">
             <button type="submit" name="enviar" class="pesquisar">enviar</button>
@@ -59,19 +59,22 @@ if(!isset($_POST['enviar']))
                             echo "<form method='POST' action = 'receber_item.php' class='item-cadastrado'>
                             <div class='item-div'> 
                             <h3 class='nome-item'>$nomeItem</h3>
-                            <p>$destinatario</p>
-                            <p>$celular</p>
-                            <p>$telFixo</p>
+                            <p>Destinatário: $destinatario</p>
+                            <p>Celular: $celular</p>
+                            <p>Fone Fixo: $telFixo</p>
                             <input type='hidden' name='idItem' value='$idItem'>
                             </div>
                             <div class='item-div div-botoes'>
                             <span class='tx-data' >Data retorno<br>$data</span>
-                            <button type='submit' name='receber' class='bt'>receber</button></div></form>";
+                            <button type='submit' name='receber' class='bt on-print-hide'>receber</button></div>
+                            </form>
+                            ";
                                               
                         } 
                     ?>   
             </div>
-            <div class="container"><button class="cadastrar-item"><a class="bt-link" href="inventario.php">novo empréstimo</a> </button></div>
+            <div class="container on-print-hide"><button class="cadastrar-item"><a class="bt-link" href="inventario.php">novo empréstimo</a> </button>
+            <button class="bt-print on-print-hide" onclick='window.print()'>Imprimir relatatório</button>
         </div>
     </main>
 <?php include "scripts.php"?>
