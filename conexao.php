@@ -1,16 +1,11 @@
 <?php 
 
-$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$dbname = "Empresta_facil";
+define ("SERVIDOR", "localhost");
+define ("USUARIO", "root");
+define ("SENHA", null);
+define ("BANCODEDADOS","Empresta_facil");
 
 //CONEXÃO
-$conn = new mysqli($servidor, $usuario, $senha, $dbname);
-
-if($conn->error){
-    die("Falha ao conectar banco de dados".$conn->error);    
-} 
-
+$conn = new mysqli(SERVIDOR, USUARIO, SENHA, BANCODEDADOS) or die("Erro ao conectar: ". mysqli_connect_error());
 
 ?>
