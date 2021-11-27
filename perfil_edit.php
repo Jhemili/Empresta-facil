@@ -22,11 +22,11 @@
         $bairro = $dados['bairro'];
         $cidade = $dados['cidade'];
         $estado = $dados['estado'];
-        $cep = format($cepMask,$dados['CEP']);
+        $cep = format($dados['CEP']);
         $numero = $dados['numero'];
-        $celular = format($celularMask,$dados['celular']);
+        $celular = format($dados['celular']);
         if(!empty($dados['telefone_fixo'])){
-            $telFixo = format($fixoMask,$dados['telefone_fixo']);
+            $telFixo = format($dados['telefone_fixo']);
         } else {
             $telFixo = "";
         }

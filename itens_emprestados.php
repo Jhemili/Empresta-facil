@@ -44,9 +44,9 @@ if(!isset($_POST['enviar']))
                             $nomeItem = $item['nome_item'];
                             $descricao = $item['descricao'];
                             $destinatario = $item['nome_destinatario'];
-                            $celular = format($celularMask,$item['celular']);
+                            $celular = format($item['celular']);
                             if(!empty($item['telefone_fixo'])){
-                                $telFixo = format($fixoMask,$item['telefone_fixo']);
+                                $telFixo = format($item['telefone_fixo']);
                             } else {
                                 $telFixo = "";
                             }
@@ -71,7 +71,8 @@ if(!isset($_POST['enviar']))
                             </form>
                             ";
                                               
-                        } if($sqlBuscando->num_rows == 0){
+                        } 
+                        if($sqlBuscando->num_rows == 0){
                             echo "<h2 class='msg-item'>Nenhum item emprestado<h2>";
                         }
                     ?>   

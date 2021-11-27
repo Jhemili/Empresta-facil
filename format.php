@@ -1,19 +1,25 @@
 <?php
-function format($mask,$string)
+function format($string)
 {   
-    if(strlen($string) < 11){
-        return '('.$string;
-    } else {
-        return  vsprintf($mask, str_split($string));
+    $celular = 11;
+    $fixo = 10;
+    $cep = 8;
+
+    switch (strlen($string)) {
+        case $celular:
+            return  vsprintf('(%s%s)%s%s%s%s%s-%s%s%s%s', str_split($string));
+            break;
+        case $fixo:
+            return  vsprintf('(%s%s)%s%s%s%s-%s%s%s%s', str_split($string));
+            break;
+        case $cep:
+            return  vsprintf('%s%s%s%s%s-%s%s%s', str_split($string));
+            break;
+        default:
+            return $string;
     }
+
+    
     
 } 
-
-$celularMask = '(%s%s)%s%s%s%s%s-%s%s%s%s';
-$fixoMask = '(%s%s)%s%s%s%s-%s%s%s%s';
-$cepMask = '%s%s%s%s%s-%s%s%s';
-
-
-
-
 ?>
